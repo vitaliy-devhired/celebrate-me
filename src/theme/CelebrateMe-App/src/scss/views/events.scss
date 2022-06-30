@@ -1,0 +1,52 @@
+.events {
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            margin: 0;
+            padding: 0;
+            @include box;
+        }
+    }
+
+    &__item {
+        $self: &;
+        position: relative;
+        padding: var(--indent) var(--indent-double) var(--indent) var(--indent-large);
+        background: var(--color-secondary--light);
+        border-radius: var(--border-radius);
+        user-select: none;
+        outline: none;
+        cursor: pointer;
+        transition: all var(--transition-duration) ease-in-out;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: var(--color-secondary--light-hover);
+            transition: all var(--transition-duration-fast) ease-in-out;
+        }
+
+        #{$self}__author,
+        #{$self}__title,
+        #{$self}__date {
+            @include text-wrap;
+            margin: 0;
+        }
+
+        #{$self}__arrow {
+            display: flex;
+            position: absolute;
+            inset: 0 var(--indent) 0 auto;
+
+            .icon {
+                width: 0.5rem;
+                height: 1rem;
+                margin: auto;
+                fill: var(--color-primary);
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.form--gift {
+    .form__footer {
+        margin-top: var(--indent-triple);
+    }
+}
+
+@media only screen and (min-width: $screen-mobile + 1) {
+    .buttons--gift {
+        .button {
+            max-width: var(--template-width-half);
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+}

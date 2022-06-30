@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Gift item details</title>
+  <link href="img/logo-icon.png" rel="shortcut icon">
+  <link href="css/index.css" rel="stylesheet">
+</head>
+<body class="view--gift">
+
+<div class="display-none">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="inline-svg"><symbol viewBox="0 0 15 25" id="chevron-right" xmlns="http://www.w3.org/2000/svg"><path d="M14.849 12.707L3.535 24.2.707 21.192l8.485-8.485L.171 3.686 3 .857l10.39 10.039 1.459 1.811z"></path></symbol></svg>
+</div>
+
+<div class="tpl__container">
+
+  <header class="tpl__header">
+    <div class="tpl__logo" aria-label="CelebrateMe"></div>
+  </header>
+
+  <main class="tpl__content">
+    <article class="tpl__view tpl__view--gift has-padding is-box">
+      <div class="tpl__view__inner">
+
+        <header class="tpl__view__header text-center">
+          <h1>Gift item details</h1>
+        </header>
+
+        <section class="tpl__view__content">
+          <form class="form form--gift">
+            <header class="form__header">
+              <p class="font--small">*Required</p>
+            </header>
+
+            <section class="form__content">
+              <div class="grid has-cols-2 has-gap-large is-adaptive">
+                <div class="grid__item">
+                  <dl class="field field--vertical">
+                    <dd>
+                      <input class="input input--primary is-required" type="text" name="link" placeholder="Item link*" title="Item link*">
+                    </dd>
+                  </dl>
+                </div>
+
+                <div class="grid__item">
+                  <dl class="field field--vertical">
+                    <dd>
+                      <input class="input input--primary is-required" type="text" name="name" placeholder="Item name*" title="Item name*">
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+
+              <div class="grid has-cols-2 has-gap-large is-adaptive">
+                <div class="grid__item">
+                  <dl class="field field--vertical">
+                    <dd>
+                      <label class="input input--primary input--image" for="gift[image]">
+                        <span class="input--image__text">Item image</span>
+                        <input class="input--image__browse" type="file" accept="image/*" id="gift[image]" tabindex="0">
+                        <img class="input--image__preview is-hidden" alt="Preview">
+                      </label>
+                    </dd>
+                  </dl>
+                  <p class="font--small">Or upload your own image</p>
+                </div>
+
+                <div class="grid__item is-mobile-order-1">
+                  <dl class="field field--vertical">
+                    <dd>
+                      <input class="input input--primary" type="text" name="description" placeholder="Description" title="Description">
+                    </dd>
+                  </dl>
+                  <dl class="field field--vertical">
+                    <dd>
+                      <input class="input input--primary is-required" type="text" name="price" placeholder="Price*" title="Price*">
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </section>
+
+            <footer class="form__footer">
+              <div class="buttons buttons--gift">
+                <button class="button button--primary" type="submit">Save</button>
+              </div>
+            </footer>
+          </form>
+        </section>
+
+      </div>
+    </article>
+  </main>
+
+</div>
+
+
+
+</body></html>

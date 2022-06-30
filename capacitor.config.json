@@ -1,0 +1,6 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "celebrate-me",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}

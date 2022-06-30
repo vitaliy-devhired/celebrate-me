@@ -1,0 +1,9 @@
+.tpl__view--login {
+    background: var(--color-background--secondary-light);
+}
+
+@media only screen and (min-width: $screen-mobile + 1) {
+    .tpl__view--login {
+        --template-width: var(--template-width-half);
+    }
+}

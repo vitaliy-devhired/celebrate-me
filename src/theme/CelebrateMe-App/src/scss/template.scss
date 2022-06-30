@@ -1,0 +1,101 @@
+/******* STRUCTURE *******/
+
+@mixin section {
+    $self: &;
+
+    &.has-padding {
+        padding-top: var(--indent-triple);
+        padding-bottom: var(--indent-triple);
+    }
+
+    &.is-box {
+        padding-right: var(--template-indent);
+        padding-left: var(--template-indent);
+
+        #{$self}__inner {
+            max-width: var(--template-width);
+        }
+    }
+}
+
+.tpl__container {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.tpl__header,
+.tpl__footer {
+    padding: 0 var(--template-indent);
+}
+
+.tpl__header {
+    height: var(--header-height);
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    background: var(--header-background);
+
+    &--overlap {
+        position: absolute;
+        inset: 0 0 auto 0;
+    }
+}
+
+.tpl__content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-flow: column;
+    flex: auto;
+    background: var(--content-background);
+}
+
+.tpl__footer {
+    position: relative;
+    z-index: 2;
+    flex: none;
+}
+
+.tpl__view {
+    $self: &;
+    @include section;
+    flex: auto;
+
+    &__inner {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__header,
+    &__content,
+    &__footer {
+        &:not(:last-child) {
+            margin-bottom: var(--indent-triple);
+        }
+
+        &.has-indent-none {
+            &:not(:last-child) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.tpl__section {
+    $self: &;
+    @include section;
+}
+
+/******* ELEMENTS *******/
+
+.tpl__logo {
+    width: 150px;
+    height: 58px;
+    background: url("#{$path-img}/logo.png");
+    background-size: contain;
+}

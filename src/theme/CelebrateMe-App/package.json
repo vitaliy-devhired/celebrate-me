@@ -1,0 +1,42 @@
+{
+  "name": "celebrateme-app",
+  "version": "1.0.5",
+  "description": "CelebrateMe app assets.",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp",
+    "watch": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SerDIDG/CelebrateMe-App.git"
+  },
+  "keywords": [
+    "assets"
+  ],
+  "author": "Serhio Magpie",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/SerDIDG/CelebrateMe-App/issues"
+  },
+  "homepage": "https://github.com/SerDIDG/CelebrateMe-App#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/register": "^7.13.8",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-embed-svg": "^1.4.8",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-svg-css": "git+https://github.com/phatpaul/gulp-svg-css.git",
+    "gulp-svg-sprite": "^1.5.0",
+    "modern-normalize": "^1.1.0"
+  }
+}

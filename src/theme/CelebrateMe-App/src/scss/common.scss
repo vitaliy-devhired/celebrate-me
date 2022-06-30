@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Avenir Roman';
+    src:
+        url('#{$path-fonts}/Avenir-Roman.woff2') format('woff2'),
+        url('#{$path-fonts}/Avenir-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/******* COMMON *******/
+
+.display-none {
+    display: none;
+}
+
+/******* COLORS *******/
+
+.background {
+    &--primary {
+        background-color: var(--color-primary);
+    }
+
+    &--primary-light {
+        background-color: var(--color-primary--light);
+    }
+
+    &--secondary {
+        background-color: var(--color-secondary);
+    }
+
+    &--secondary-light {
+        background-color: var(--color-secondary--light);
+    }
+
+    &--third {
+        background-color: var(--color-third);
+    }
+
+    &--third-light {
+        background-color: var(--color-third--light);
+    }
+}
+
+/******* TEXT *******/
+
+@mixin text-wrap {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.text {
+    &-wrap {
+        @include text-wrap;
+    }
+
+    &-center {
+        text-align: center;
+    }
+}
+
+/******* BLOCKS *******/
+
+@mixin box {
+    &:not(:last-child) {
+        margin-bottom: var(--indent);
+    }
+}
+
+.box {
+    @include box;
+}
+
+@mixin icon {
+    display: block;
+    position: relative;
+    background-color: transparent;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.icon {
+    @include icon;
+}
+
+/*** COLUMNS ***/
+
+@mixin grid {
+    grid-gap: var(--field-indent);
+    display: grid;
+
+    &:not(:last-child) {
+        margin-bottom: var(--field-indent);
+    }
+
+    &.has-cols-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &.has-gap-large {
+        grid-gap: var(--indent-large);
+    }
+
+    &.is-hidden {
+        display: none;
+    }
+
+    &--group {
+        padding: var(--field--group-padding);
+    }
+
+    @media only screen and (max-width: $screen-mobile) {
+        &.is-adaptive {
+            grid-template-columns: 1fr;
+            grid-gap: var(--field-indent);
+        }
+
+        &__item {
+            &.is-mobile-order-1 {
+                grid-row-start: 1;
+            }
+        }
+    }
+}
+
+.grid {
+    @include grid;
+}

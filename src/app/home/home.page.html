@@ -1,0 +1,58 @@
+
+
+
+  
+    <article class="tpl__view tpl__view--login has-padding is-box">
+      <div class="tpl__view__inner">
+
+        <header class="tpl__view__header text-center">
+          <h1>Let’s Get This Party Started</h1>
+        </header>
+
+        <section class="tpl__view__content">
+          <form class="form form--login" [formGroup]="user" (ngSubmit)="onLogin($event)">
+            <section class="form__content">
+              <dl class="field field--vertical">
+                <dd>
+                  <input class="input is-required" [ngClass]="{'is-invalid':(hasError(user, 'email'))}" name="email" placeholder="Email*" title="Email*" type="email" [formControl]="user.controls.email">
+                  <div class="field__hint is-danger" [ngClass]="{'is-hidden': !(hasError(user, 'email'))}">Email is required.</div>
+                </dd>
+              </dl>
+              <dl class="field field--vertical indent-large">
+                <dd>
+                  <input class="input is-required" [ngClass]="{'is-invalid':(hasError(user, 'password'))}" name="password" placeholder="Password*" title="Password*" type="password" [formControl]="user.controls.password">
+                  <!-- <input class="input is-required is-invalid" name="password" placeholder="Password*" title="Password*" type="password"> -->
+                  <div class="field__hint is-danger" [ngClass]="{'is-hidden': !(hasError(user, 'password'))}">Password is required.</div>
+                </dd>
+              </dl>
+              <dl class="field field--vertical indent-large">
+                <dd>
+                  <div class="check">
+                    <label class="check__label" for="login[remember]">
+                      <input class="input input--check" id="login[remember]" type="checkbox" value="Yes">
+                      <span class="check__text">Remember Me</span>
+                    </label>
+                  </div>
+                </dd>
+              </dl>
+              <div class="buttons">
+                <button class="button button--primary" type="submit">Login</button>
+              </div>
+            </section>
+
+            <footer class="form__footer">
+              <ul class="form__links form__links--vertical">
+                <li>
+                  <a href="/password/reset" target="_blank">Forgot Your Password?</a>
+                </li>
+              </ul>
+            </footer>
+          </form>
+        </section>
+
+        <footer class="tpl__view__footer text-center">
+          <p class="font--large">Don't have an account? <a class="link--underline" href="/register" target="_blank">Sign up</a>.</p>
+        </footer>
+
+      </div>
+    </article>

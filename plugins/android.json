@@ -1,0 +1,32 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cc.fovea.cordova.openwith": {
+      "ANDROID_MIME_TYPE": "text/*",
+      "ANDROID_EXTRA_ACTIONS": " ",
+      "PACKAGE_NAME": "io.celebrate.me"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "io.celebrate.me"
+    },
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "io.celebrate.me"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "io.celebrate.me"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "io.celebrate.me"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "io.celebrate.me"
+    }
+  },
+  "dependent_plugins": {}
+}
