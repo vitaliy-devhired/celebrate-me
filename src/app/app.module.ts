@@ -6,7 +6,7 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 import { AppComponent } from './app.component';
 
-
+import {Storage} from '@ionic/storage';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -33,7 +33,7 @@ import {FormProvider,ServiceApi} from "./../providers/services";
 @NgModule({
   declarations: [AppComponent,LoginComponent,EventsComponent,GiftComponent,GiftFilledComponent,OnboardingComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,FormsModule,ReactiveFormsModule,HttpClientModule,RouterModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },FormProvider,ServiceApi],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },FormProvider,ServiceApi,Storage],
   bootstrap: [AppComponent],
 })
 export class AppModule implements OnInit {

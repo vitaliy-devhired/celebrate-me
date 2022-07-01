@@ -104,21 +104,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AppModule": () => (/* binding */ AppModule)
 /* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! tslib */ 4929);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/core */ 2560);
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/platform-browser */ 4497);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/router */ 124);
-/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @ionic/angular */ 3819);
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! tslib */ 4929);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/core */ 2560);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/platform-browser */ 4497);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/router */ 124);
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @ionic/angular */ 3819);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app.component */ 5041);
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app-routing.module */ 158);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/forms */ 2508);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/common/http */ 8987);
-/* harmony import */ var _components_login_login_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/login/login.component */ 5220);
-/* harmony import */ var _components_events_events_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/events/events.component */ 6162);
-/* harmony import */ var _components_gift_gift_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/gift/gift.component */ 9477);
-/* harmony import */ var _components_gift_filled_gift_filled_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/gift-filled/gift-filled.component */ 6428);
-/* harmony import */ var _components_onboarding_onboarding_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/onboarding/onboarding.component */ 6008);
-/* harmony import */ var _providers_services__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./../providers/services */ 6619);
+/* harmony import */ var _ionic_storage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @ionic/storage */ 190);
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app-routing.module */ 158);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/forms */ 2508);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/common/http */ 8987);
+/* harmony import */ var _components_login_login_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/login/login.component */ 5220);
+/* harmony import */ var _components_events_events_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/events/events.component */ 6162);
+/* harmony import */ var _components_gift_gift_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/gift/gift.component */ 9477);
+/* harmony import */ var _components_gift_filled_gift_filled_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/gift-filled/gift-filled.component */ 6428);
+/* harmony import */ var _components_onboarding_onboarding_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/onboarding/onboarding.component */ 6008);
+/* harmony import */ var _providers_services__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./../providers/services */ 6619);
+
+
 
 
 
@@ -140,11 +143,11 @@ __webpack_require__.r(__webpack_exports__);
 let AppModule = class AppModule {
     ngOnInit() { }
 };
-AppModule = (0,tslib__WEBPACK_IMPORTED_MODULE_8__.__decorate)([
-    (0,_angular_core__WEBPACK_IMPORTED_MODULE_9__.NgModule)({
-        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent, _components_login_login_component__WEBPACK_IMPORTED_MODULE_2__.LoginComponent, _components_events_events_component__WEBPACK_IMPORTED_MODULE_3__.EventsComponent, _components_gift_gift_component__WEBPACK_IMPORTED_MODULE_4__.GiftComponent, _components_gift_filled_gift_filled_component__WEBPACK_IMPORTED_MODULE_5__.GiftFilledComponent, _components_onboarding_onboarding_component__WEBPACK_IMPORTED_MODULE_6__.OnboardingComponent],
-        imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__.BrowserModule, _ionic_angular__WEBPACK_IMPORTED_MODULE_11__.IonicModule.forRoot(), _app_routing_module__WEBPACK_IMPORTED_MODULE_1__.AppRoutingModule, _angular_forms__WEBPACK_IMPORTED_MODULE_12__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_12__.ReactiveFormsModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_13__.HttpClientModule],
-        providers: [{ provide: _angular_router__WEBPACK_IMPORTED_MODULE_14__.RouteReuseStrategy, useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_11__.IonicRouteStrategy }, _providers_services__WEBPACK_IMPORTED_MODULE_7__.FormProvider, _providers_services__WEBPACK_IMPORTED_MODULE_7__.ServiceApi],
+AppModule = (0,tslib__WEBPACK_IMPORTED_MODULE_9__.__decorate)([
+    (0,_angular_core__WEBPACK_IMPORTED_MODULE_10__.NgModule)({
+        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent, _components_login_login_component__WEBPACK_IMPORTED_MODULE_3__.LoginComponent, _components_events_events_component__WEBPACK_IMPORTED_MODULE_4__.EventsComponent, _components_gift_gift_component__WEBPACK_IMPORTED_MODULE_5__.GiftComponent, _components_gift_filled_gift_filled_component__WEBPACK_IMPORTED_MODULE_6__.GiftFilledComponent, _components_onboarding_onboarding_component__WEBPACK_IMPORTED_MODULE_7__.OnboardingComponent],
+        imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_11__.BrowserModule, _ionic_angular__WEBPACK_IMPORTED_MODULE_12__.IonicModule.forRoot(), _app_routing_module__WEBPACK_IMPORTED_MODULE_2__.AppRoutingModule, _angular_forms__WEBPACK_IMPORTED_MODULE_13__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_13__.ReactiveFormsModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_14__.HttpClientModule, _angular_router__WEBPACK_IMPORTED_MODULE_15__.RouterModule],
+        providers: [{ provide: _angular_router__WEBPACK_IMPORTED_MODULE_15__.RouteReuseStrategy, useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_12__.IonicRouteStrategy }, _providers_services__WEBPACK_IMPORTED_MODULE_8__.FormProvider, _providers_services__WEBPACK_IMPORTED_MODULE_8__.ServiceApi, _ionic_storage__WEBPACK_IMPORTED_MODULE_1__.Storage],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent],
     })
 ], AppModule);
@@ -273,14 +276,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "LoginComponent": () => (/* binding */ LoginComponent)
 /* harmony export */ });
 /* harmony import */ var _Users_vitalijponomarenko_Documents_android_celebrate_me_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 1670);
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! tslib */ 4929);
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! tslib */ 4929);
 /* harmony import */ var _login_component_html_ngResource__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./login.component.html?ngResource */ 1511);
 /* harmony import */ var _login_component_scss_ngResource__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./login.component.scss?ngResource */ 6862);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/core */ 2560);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/forms */ 2508);
-/* harmony import */ var _providers_services__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../providers/services */ 6619);
-/* harmony import */ var _node_modules_cc_fovea_cordova_openwith_www_openwith__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../node_modules/cc.fovea.cordova.openwith/www/openwith */ 1406);
-/* harmony import */ var _node_modules_cc_fovea_cordova_openwith_www_openwith__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_cc_fovea_cordova_openwith_www_openwith__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/core */ 2560);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/router */ 124);
+/* harmony import */ var _ionic_storage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic/storage */ 190);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/forms */ 2508);
+/* harmony import */ var _providers_services__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../providers/services */ 6619);
+/* harmony import */ var _node_modules_cc_fovea_cordova_openwith_www_openwith__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../node_modules/cc.fovea.cordova.openwith/www/openwith */ 1406);
+/* harmony import */ var _node_modules_cc_fovea_cordova_openwith_www_openwith__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_cc_fovea_cordova_openwith_www_openwith__WEBPACK_IMPORTED_MODULE_5__);
 
 
 
@@ -289,17 +294,26 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-let LoginComponent = class LoginComponent extends _providers_services__WEBPACK_IMPORTED_MODULE_3__.FormProvider {
-  constructor(api, builder) {
+
+
+let LoginComponent = class LoginComponent extends _providers_services__WEBPACK_IMPORTED_MODULE_4__.FormProvider {
+  constructor(api, builder, route, router, storage) {
     super();
     this.api = api;
+    this.route = route;
+    this.router = router;
+    this.storage = storage;
     this.user = builder.group({
-      'email': new _angular_forms__WEBPACK_IMPORTED_MODULE_5__.FormControl('', [_angular_forms__WEBPACK_IMPORTED_MODULE_5__.Validators.required]),
-      'password': new _angular_forms__WEBPACK_IMPORTED_MODULE_5__.FormControl('', [_angular_forms__WEBPACK_IMPORTED_MODULE_5__.Validators.required])
+      'email': new _angular_forms__WEBPACK_IMPORTED_MODULE_6__.FormControl('', [_angular_forms__WEBPACK_IMPORTED_MODULE_6__.Validators.required]),
+      'password': new _angular_forms__WEBPACK_IMPORTED_MODULE_6__.FormControl('', [_angular_forms__WEBPACK_IMPORTED_MODULE_6__.Validators.required])
     });
-    this.openwith = (_node_modules_cc_fovea_cordova_openwith_www_openwith__WEBPACK_IMPORTED_MODULE_4___default());
-    this.openwith.init(this.initSuccess, this.initError);
-    this.openwith.addHandler(this.myHandler);
+
+    if (window.cordova) {
+      alert('cordova');
+      this.openwith = (_node_modules_cc_fovea_cordova_openwith_www_openwith__WEBPACK_IMPORTED_MODULE_5___default());
+      this.openwith.init(this.initSuccess, this.initError);
+      this.openwith.addHandler(this.myHandler);
+    }
   } ///
 
 
@@ -354,6 +368,7 @@ let LoginComponent = class LoginComponent extends _providers_services__WEBPACK_I
     var _this = this;
 
     return (0,_Users_vitalijponomarenko_Documents_android_celebrate_me_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      location.reload();
       _this.errors = {};
       let form = _this.user;
       _this.isSubmit = true;
@@ -370,7 +385,10 @@ let LoginComponent = class LoginComponent extends _providers_services__WEBPACK_I
       ;
 
       if (data['token']) {
-        alert('token: ' + data['token']);
+        //alert('token: ' + data['token']);
+        _this.storage.set('auth-token', data['token']);
+
+        _this.router.navigate(["/onboarding"]);
       }
     })();
   }
@@ -378,12 +396,18 @@ let LoginComponent = class LoginComponent extends _providers_services__WEBPACK_I
 };
 
 LoginComponent.ctorParameters = () => [{
-  type: _providers_services__WEBPACK_IMPORTED_MODULE_3__.ServiceApi
+  type: _providers_services__WEBPACK_IMPORTED_MODULE_4__.ServiceApi
 }, {
-  type: _angular_forms__WEBPACK_IMPORTED_MODULE_5__.FormBuilder
+  type: _angular_forms__WEBPACK_IMPORTED_MODULE_6__.FormBuilder
+}, {
+  type: _angular_router__WEBPACK_IMPORTED_MODULE_7__.ActivatedRoute
+}, {
+  type: _angular_router__WEBPACK_IMPORTED_MODULE_7__.Router
+}, {
+  type: _ionic_storage__WEBPACK_IMPORTED_MODULE_3__.Storage
 }];
 
-LoginComponent = (0,tslib__WEBPACK_IMPORTED_MODULE_6__.__decorate)([(0,_angular_core__WEBPACK_IMPORTED_MODULE_7__.Component)({
+LoginComponent = (0,tslib__WEBPACK_IMPORTED_MODULE_8__.__decorate)([(0,_angular_core__WEBPACK_IMPORTED_MODULE_9__.Component)({
   selector: 'app-login',
   template: _login_component_html_ngResource__WEBPACK_IMPORTED_MODULE_1__,
   styles: [_login_component_scss_ngResource__WEBPACK_IMPORTED_MODULE_2__]
@@ -476,8 +500,18 @@ __webpack_require__.r(__webpack_exports__);
 if (_environments_environment__WEBPACK_IMPORTED_MODULE_1__.environment.production) {
     (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.enableProdMode)();
 }
-(0,_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_3__.platformBrowserDynamic)().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_0__.AppModule)
-    .catch(err => console.log(err));
+//platformBrowserDynamic().bootstrapModule(AppModule).catch(err => console.log(err));
+const bootstrap = () => {
+    (0,_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_3__.platformBrowserDynamic)().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_0__.AppModule);
+};
+if (typeof window['cordova'] !== 'undefined') {
+    document.addEventListener('deviceready', () => {
+        bootstrap();
+    }, false);
+}
+else {
+    bootstrap();
+}
 
 
 /***/ }),
