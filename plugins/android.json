@@ -12,9 +12,6 @@
       "ANDROID_EXTRA_ACTIONS": " ",
       "PACKAGE_NAME": "io.celebrate.me"
     },
-    "cordova-plugin-device": {
-      "PACKAGE_NAME": "io.celebrate.me"
-    },
     "cordova-plugin-ionic-keyboard": {
       "PACKAGE_NAME": "io.celebrate.me"
     },

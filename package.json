@@ -28,6 +28,7 @@
     "cordova-android": "^8.1.0",
     "cordova-browser": "6.0.0",
     "cordova-ios": "5.1.1",
+    "cordova-plugin-crosswalk-webview": "git+https://github.com/crosswalk-project/cordova-plugin-crosswalk-webview.git",
     "cordova-plugin-openwith": "git+https://github.com/missive/cordova-plugin-openwith.git",
     "ionic-angular": "^3.9.10",
     "rxjs": "^6.6.7",
@@ -51,7 +52,6 @@
     "@types/node": "^12.11.1",
     "@typescript-eslint/eslint-plugin": "5.3.0",
     "@typescript-eslint/parser": "5.3.0",
-    "cordova-plugin-device": "^2.0.2",
     "cordova-plugin-ionic-keyboard": "^2.2.0",
     "cordova-plugin-ionic-webview": "^5.0.0",
     "cordova-plugin-splashscreen": "^5.0.2",
@@ -76,7 +76,6 @@
   "cordova": {
     "plugins": {
       "cordova-plugin-statusbar": {},
-      "cordova-plugin-device": {},
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-ionic-webview": {},
       "cordova-plugin-ionic-keyboard": {},
